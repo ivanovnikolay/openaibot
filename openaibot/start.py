@@ -18,6 +18,8 @@ async def start(update: Update, _):
         '/new - создание новых изображений\n' \
         '/edit - редактирование изображения\n' \
         '/var - создание вариаций изображения\n' \
-        '/settings - настройка количества и размер генерируемых изображений\n'
+        '/settings - настройка количества и размера генерируемых изображений\n' \
+        '/help - помощь\n' \
+        '/cancel - отмена текущей операции\n'
     await update.message.reply_text(text, ParseMode.MARKDOWN, disable_web_page_preview=True)
     return ConversationHandler.END
